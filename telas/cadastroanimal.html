@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>cadastro animal</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+    .cadastro{
+        color: white;
+        text-align: center;
+} 
+    #borda{
+        border: 10px solid white;
+        border-style:outset;
+        border-radius: 10px;
+        margin: 5px 2px 5px 5px;
+}
+
+    .formulario{
+        color: white;
+        font-size: 20px;
+        text-align: center;
+        
+}
+    #borda-inferior{
+        background-color: red;
+        border: 4px solid white;
+        margin: 15px 250px 15px 250px;
+
+    
+}
+    #conteudo-principal{
+        background-color: #00BFFF;
+        margin: 0px 250px 10px 250px;
+        color: black;
+        font-weight: bold;
+        padding: 2%;
+
+}
+    .imagem{
+        border-radius: 10px;
+        float:inline-start;
+        top: 180px;
+        left: 540px;  
+        margin: 5px 5px 0px 50px;
+        width: 48%    
+    
+}   
+    .fonte-padrao{
+        color: white;
+}
+    #tela{
+        background-color: #2f8dda;
+    }
+    .button{
+        width:100%;
+        color: #0077ff;
+        border: 1px solid #00BFFF;
+        border-radius: 10px;
+        font-size: 20px;
+        margin: 3px;
+
+
+    }
+
+</style>
+</head>
+<body id = "tela">
+    <div id="borda">
+        <h1 class = "cadastro" >CADASTRO DE ANIMAL</h1>
+    </div>
+        <p id ="borda-inferior" class= "formulario"><b>Formulário</b></p> 
+    <div id ="conteudo-principal" >
+
+    <tr width="100%">
+    <td width="30%" align="center"><img src ="vet(1).jpg" class ="imagem"/></td>
+    </tr>       
+<form action= "" method="POST">
+    </br clear = "both"> 
+    <fieldset align ="center" >
+    <legend>Dados Animal</legend>
+    <label>Nome Animal:</label>
+        <input type="text" nome="Nome Animal" placeholder="Digite aqui" required/>
+        </br>
+    <label > Responsavel:</label>
+        <input type="text" nome="Responsavel" placeholder="Digite aqui" required/>
+        </br>
+    <label> Data Nascimento:</label>
+        <input type="date" nome="data nascimento" required/>
+        </br>
+    <label> Data da Ultima Vacina:</label>
+        <input type="date" nome="data vacina" required/>
+        </br>
+    <label> Cor:</label>
+        <input type="text" nome="Cor" placeholder="Digite aqui" required/>
+        </br>
+    <label > Altura:</label>
+        <input type="text" nome="Altura" placeholder="Digite aqui" maxlength ="4" required/>
+        </br>
+    <label > Peso:</label>
+        <input type="text" nome="Peso" placeholder="Digite aqui" maxlength ="6" required/>
+        </br>
+    <label> Sexo: </label>
+        <select required>
+            <option>--</option>
+            <option>fêmea</option>
+            <option>macho</option>
+        </select>
+        </br>
+    <label> Especie: </label>
+        <select required>
+            <option>--</option>
+            <option>gato</option>
+            <option>cão</option>
+        </select>
+        </br>
+    <label>Raça:</label>
+        <select required>
+            <option>--</option>
+            <option>siamês</option>
+            <option>maine</option>
+            <option>pengala</option>
+            <option>persa</option>
+            <option>pitbull</option>
+            <option>pitbull</option>
+            <option>buldogue</option>
+            <option>labrador</option>
+            <option>pastor alemão</option>
+        </select></br>
+            <input type = "submit" value="Cadastrar" class= "button"/>
+        </fieldset>
+        </br>
+</form>            
+</div>
+    
+</body>
+</html>
